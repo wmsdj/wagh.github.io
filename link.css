@@ -1,0 +1,470 @@
+.water {
+    background-color: rgb(174, 174, 218);
+}
+
+/*<header>*/
+.jia {
+    background-color: rgba(252, 178, 190, 0.5);
+    border-radius: 10px;
+}
+
+/*<h1>*/
+.jiazi {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/*左边是缩略图，右边是主体（放大图和名片）*/
+.yi {
+    background-color: rgba(252, 178, 190, 0.5);
+    border-radius: 10px;
+    /*添加样式flex默认左右布局（row）*/
+    display: flex;
+}
+
+/*缩略图部分*/
+.yizi {
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    width: 20vw;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*ul*/
+.yizijia {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    list-style-type: none;
+    max-height: 650px;
+    max-width: 180px;
+    overflow-y: auto;
+    padding-left: 8px;
+    padding-right: 17px;
+
+}
+
+/*li*/
+.yizijiazi {
+    list-style-type: none;
+    background-color: rgba(252, 251, 251,0.3);
+    border-radius: 10px;
+    max-width: 130px;
+    border-radius: 10px;
+    transition: 133ms ease-in-out;
+}
+
+/**/
+.yizijiazi:hover {
+    transform: scale(1.1);
+}
+
+/*li-img*/
+.smallimg {
+    max-width: 120px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+/*li-span-p*/
+.smalltext {
+    margin-top: 0;
+    text-align: center;
+}
+
+/*大区域*/
+.yichou {
+    border-radius: 10px;
+    height: 700px;
+    width: 80vw;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+}
+
+/*大图+寄语*/
+.yichoujia {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 60vw;
+}
+
+/*大图*/
+.yichoujiazi {
+    position: relative;
+    text-align: center;
+    height: 600px;
+    border-radius: 10px;
+    transition: transform 667ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*bigimg*/
+.bigimg {
+    text-align: center;
+    max-height: 380px;
+    margin-top:  25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.3);
+}
+
+/**/
+.hiddenbigimg .yichoujia {
+    display: none;
+}
+
+/**/
+.hiddenbigimg .yizijia {
+    max-width: 80%;
+}
+
+/**/
+.hiddenbigimg .yizijiazi {
+    flex-direction: column;
+    align-items: center;
+}
+
+/**/
+.smallest {
+    transform: scale(0.002);
+    transition: 0ms;
+}
+
+/*寄语部分*/
+.yichoujiachou {
+    color: rgb(0, 0, 0);
+    height: 200px;
+    width: 20em;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: start;
+    text-indent: 2em;
+    font-size: 20px;
+}
+
+/*min-width表示大于这个值会显示该类；反之，max-width小于这个值显示该类*/
+@media screen and (max-width: 600px) {
+    .water {
+        background-color: rgb(174, 174, 218);
+    }
+
+    /*<header>*/
+    .jia {
+        background-color:rgba(252, 178, 190, 0.5);
+        border-radius: 10px;
+        width: 100vw;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    /*<h1>*/
+    .jiazi {
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    /*左边是缩略图，右边是主体（放大图和名片）*/
+    .yi {
+        background-color: rgba(252, 178, 190, 0.5);
+        border-radius: 10px;
+        /*添加样式flex默认左右布局（row）*/
+        display: flex;
+        width: 600px;
+    }
+
+    /*缩略图部分*/
+    .yizi {
+        border-radius: 10px;
+        margin: 5px 5px 5px 5px;
+        width: 20vw;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    /*ul*/
+    .yizijia {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        list-style-type: none;
+        max-height: 650px;
+        max-width: 100px;
+        overflow-y: auto;
+        margin-left: 5px;
+        padding-right: 6px;
+        padding-left: 5px;
+    }
+
+    /*li*/
+    .yizijiazi {
+        list-style-type: none;
+        background-color: rgba(252, 251, 251,0.3);
+        border-radius: 10px;
+        max-width: 90px;
+        margin-left: 0px;
+        border-radius: 10px;
+        transition: 133ms ease-in-out;
+    }
+
+    /**/
+    .yizijiazi:hover {
+        transform: scale(1.1);
+    }
+
+    /*li-img*/
+    .smallimg {
+        max-width:50px;
+        height: auto;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    /*li-span-p*/
+    .smalltext {
+        font-size: 12px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    /*大区域*/
+    .yichou {
+        display: inline-block;
+        border-radius: 10px;
+        height: 700px;
+        width: 330px;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+    }
+    /*大图+寄语*/
+    .yichoujia {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        margin: 10px 10px;
+        width:330px;
+    }
+    /*大图*/
+    .yichoujiazi {
+        position: relative;
+        text-align: center;
+        width: 270px;
+        height: 480px;
+        border-radius: 10px;
+        transition: transform 667ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    /*bigimg*/
+    .bigimg {
+        text-align: center;
+        max-width: 270px;
+        margin-top:  50px;
+        margin-left: 0px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.3);
+    }
+
+    /**/
+    .hiddenbigimg .yichoujia {
+        display: none;
+    }
+
+    /**/
+    .hiddenbigimg .yizijia {
+        max-width: 80%;
+    }
+
+    /**/
+    .hiddenbigimg .yizijiazi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /**/
+    .smallest {
+        transform: scale(0.002);
+        transition: 0ms;
+    }
+
+    /*寄语部分*/
+    .yichoujiachou {
+        color: rgb(0, 0, 0);
+        height: 100px;
+        width: 16em;
+        margin-top: 0;
+        padding-top: 0;
+        margin-left: 0px;
+        border-radius: 10px;
+        text-align: start;
+        text-indent: 2em;
+        font-size: 16px;
+    }
+  }
+
+/**/
+@media screen and (min-width: 1200px) {
+    .water {
+        background-color:rgb(174, 174, 218);
+    }
+    /*<header>*/
+    .jia {
+        background-color: rgba(252, 178, 190, 0.5);
+        border-radius: 10px;
+    }
+
+    /*<h1>*/
+    .jiazi {
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    /*左边是缩略图，右边是主体（放大图和名片）*/
+    .yi {
+        background-color: rgba(252, 178, 190, 0.5);
+        border-radius: 10px;
+        /*添加样式flex默认左右布局（row）*/
+        display: flex;
+    }
+
+    /*缩略图部分*/
+    .yizi {
+        border-radius: 10px;
+        margin: 10px 10px 10px 50px;
+        width: 20vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    /*ul*/
+    .yizijia {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        list-style-type: none;
+        max-height: 650px;
+        max-width: 180px;
+        overflow-y: auto;
+        padding-left: 3vw;
+    }
+
+    /*li*/
+    .yizijiazi {
+        list-style-type: none;
+        background-color: rgba(252, 251, 251,0.3);
+        border-radius: 10px;
+        max-width: 130px;
+        border-radius: 10px;
+        transition: 133ms ease-in-out;
+    }
+
+    /**/
+    .yizijiazi:hover {
+    transform: scale(1.2);
+    }
+
+    /*li-img*/
+    .smallimg {
+        max-width: 120px;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+
+        /*li-span-p*/
+    .smalltext {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    /*大区域*/
+    .yichou {
+        display: inline-block;
+        border-radius: 10px;
+        height: 700px;
+        width: 80vw;
+        margin: 10px 10px 10px 0px;
+        display: flex;
+    }
+
+    /*大图+寄语*/
+    .yichoujia {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        margin: 10px 10px;
+        width: 60vw;
+    }
+
+    /*大图*/
+    .yichoujiazi {
+        position: relative;
+        text-align: center;
+        height: 550px;
+        border-radius: 10px;
+        transition: transform 667ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    /*bigimg*/
+    .bigimg {
+        text-align: center;
+        max-height: 500px;
+        margin-top:  25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.3);
+    }
+
+    /**/
+    .hiddenbigimg .yichoujia {
+        display: none;
+    }
+
+    /**/
+    .hiddenbigimg .yizijia {
+        max-width: 80%;
+    }
+
+    /**/
+    .hiddenbigimg .yizijiazi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /**/
+    .smallest {
+        transform: scale(0.002);
+        transition: 0ms;
+    }
+
+    /*寄语部分*/
+    .yichoujiachou {
+        color: rgb(0, 0, 0);
+        height: 200px;
+        width: 20em;
+        border-radius: 10px;
+        text-align: start;
+        text-indent: 2em;
+        font-size: 20px;
+    }
+  }
